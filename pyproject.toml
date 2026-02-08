@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentineldb"
+version = "0.1.0"
+description = "Lightweight knowledge graph from plain text notes — extract hidden relationships automatically."
+readme = "README.md"
+authors = [{name = "Parham Fakhari", email = "info@parhamfakhari.ir"}]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/parhamfakhar1/sentineldb"
+Repository = "https://github.com/parhamfakhar1/sentineldb"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sentineldb*"]
